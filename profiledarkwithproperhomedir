@@ -1,5 +1,6 @@
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
+// ps if you clone this file remember your wsl distro will have a different guid and remember to rename this file to profiles.json
 
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
