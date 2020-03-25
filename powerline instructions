@@ -43,3 +43,7 @@ To apply the changes to your current terminal:
 
 source ~/.bashrc
 After running the previous command or restarting your terminal, the Powerline segments appear in your prompt.
+
+If this doesnt work I also used this https://dev.to/mbcrump/windows-git-prompt-for-wsl-bash-and-powershell-7m9
+
+I need to clean this up and provide full steps.
