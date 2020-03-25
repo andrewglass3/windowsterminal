@@ -1,0 +1,42 @@
+Install and configure Powerline fonts
+To install the Powerline fonts:
+
+Open a Powershell session as administrator.
+Download and expand the Powerline fonts repository:
+powershell -command "& { iwr https://github.com/powerline/fonts/archive/master.zip -OutFile ~\fonts.zip }"
+Expand-Archive -Path ~\fonts.zip -DestinationPath ~
+Update the execution policy to allow the installation of the fonts:
+Set-ExecutionPolicy Bypass
+Run the installation script:
+~\fonts-master\install.ps1
+Revert the execution policy back the default value:
+Set-ExecutionPolicy Default
+To configure the fonts:
+
+Open the Ubuntu app.
+Open the Properties dialog.
+From the Font tab, select one of the Powerline fonts, such as ProFont for Powerline.
+Click OK.
+Run the rest of this tutorial from within the Ubuntu app.
+
+Install Powerline
+You can install Powerline from the Universe repository of Ubuntu:
+
+Add the Universe repository:
+sudo add-apt-repository universe
+Install Powerline
+sudo apt install --yes powerline
+Configure Bash
+To configure Powerline for bash, add the following lines to your $HOME/.bashrc file:
+
+# Powerline configuration
+if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+  powerline-daemon -q
+  POWERLINE_BASH_CONTINUATION=1
+  POWERLINE_BASH_SELECT=1
+  source /usr/share/powerline/bindings/bash/powerline.sh
+fi
+To apply the changes to your current terminal:
+
+source ~/.bashrc
+After running the previous command or restarting your terminal, the Powerline segments appear in your prompt.
