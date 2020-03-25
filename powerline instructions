@@ -1,5 +1,8 @@
-Install and configure Powerline fonts
-To install the Powerline fonts:
+Install and configure Powerline fonts and delugia nerd fonts
+
+1) https://github.com/adam7/delugia-code/releases << install this
+
+2) To install the Powerline fonts:
 
 Open a Powershell session as administrator.
 Download and expand the Powerline fonts repository:
